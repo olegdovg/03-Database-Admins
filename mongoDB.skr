@@ -1,0 +1,21 @@
+show databases;
+
+use task;
+//db.dropDatabases()
+
+db.createCollection("task")
+show collections
+
+db.task.insertOne({
+    name : "LinuxBash",
+    tasks: 10
+
+})
+
+db.task.insertOne({
+    name : "DataBases",
+    tasks: 20
+
+})
+
+db.task.find()
